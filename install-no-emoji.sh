@@ -36,7 +36,7 @@ curl -sS https://starship.rs/install.sh | sh
 mkdir -p ~/.config && touch ~/.config/starship.toml
 cp -rf starship-no-emoji.toml ~/.config/starship.toml
 
-cp -rf zshrc ~/.zshrc
+cp -rf zshrc-linux ~/.zshrc
 
 ####################
 # Setting up nvim Config

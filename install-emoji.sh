@@ -14,10 +14,6 @@ sudo apt install curl wget git zsh neovim tmux -y
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 ####################
-# Setting up main course
-brew install curl wget git zsh gh neovim tmux
-
-####################
 # Install VimPlug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -40,7 +36,7 @@ curl -sS https://starship.rs/install.sh | sh
 mkdir -p ~/.config && touch ~/.config/starship.toml
 cp -rf starship-emoji.toml ~/.config/starship.toml
 
-cp -rf zshrc ~/.zshrc
+cp -rf zshrc-linux ~/.zshrc
 
 ####################
 # Setting up nvim Config

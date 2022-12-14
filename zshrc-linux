@@ -19,8 +19,8 @@ source $ZSH/oh-my-zsh.sh
 zsh ~/.welcome/welcome.sh
 
 # HomeBrew Library
-echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/detzz/.profile
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/detzz/.profile
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /$HOME/.profile
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /$HOME/.profile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Starship Setiing Up
