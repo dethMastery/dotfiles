@@ -40,7 +40,7 @@ cp -rf zshrc ~/.zshrc
 
 ####################
 # Setting up nvim Config
-cp -rf config/* ~/.config/*
+cp -rf config/nvim ~/.config/
 
 ####################
 # Recalling zsh
