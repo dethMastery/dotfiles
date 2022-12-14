@@ -6,12 +6,16 @@ sudo clear
 
 ####################
 # Installing MAIN Course
-sudo apt update || sudo apt upgrade -y
-sudo apt install curl wget git zsh neovim tmux -y
+# sudo apt update || sudo apt upgrade -y
+# sudo apt install curl wget git zsh neovim tmux -y
 
 ####################
 # Setting Up "Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+####################
+# Setting up main course
+brew install curl wget git zsh gh neovim tmux
 
 ####################
 # Install VimPlug
