@@ -26,6 +26,8 @@ chmod +x install-emoji.sh
 
 and having fun with your new theme :D
 
+<hr />
+
 ### Starship with no emoji
 At first you should cloning this repository to your computer by using
 
