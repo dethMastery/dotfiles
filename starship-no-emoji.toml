@@ -2,7 +2,7 @@
 format = """
 [┌───────────────────>](bold green) 
 [│](bold green) $directory$package
-[│](bold green)$git_branch| $git_status 
+[│](bold green) $git_branch| $git_status 
 [└─>](bold green) """
 
 right_format = """
@@ -38,7 +38,7 @@ behind = '[-- ${count}](red)'
 diverged = '[++ ${ahead_count} | -- ${behind_count}](red)'
 up_to_date = '[HEAD == Origin](aqua)'
 untracked = '[??? Untracked](green)'
-modified = '[!!! Modified](red)'
+modified = '[!!! Modified](red) '
 staged = '[++\($count\)](green)'
 
 [hostname]
