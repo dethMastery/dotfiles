@@ -52,5 +52,5 @@ and having fun with your new theme :D
 
 <hr />
 <center>
-  make with 🤍 by <a href="https://suphakit.net" target="_blank">Suphakit P.</a> | 2022
+  made with 🤍 by <a href="https://suphakit.net" target="_blank">Suphakit P.</a> | 2022
 </center>
