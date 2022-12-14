@@ -6,8 +6,8 @@ sudo clear
 
 ####################
 # Installing MAIN Course
-# sudo apt update || sudo apt upgrade -y
-# sudo apt install curl wget git zsh neovim tmux -y
+sudo apt update || sudo apt upgrade -y
+sudo apt install curl wget git zsh neovim tmux -y
 
 ####################
 # Setting Up "Homebrew"
