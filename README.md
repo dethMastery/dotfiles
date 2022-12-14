@@ -51,6 +51,4 @@ chmod +x install-no-emoji.sh
 and having fun with your new theme :D
 
 <hr />
-<center>
-  made with 🤍 by <a href="https://suphakit.net" target="_blank">Suphakit P.</a> | 2022
-</center>
+<center> made with 🤍 by <a href="https://suphakit.net" target="_blank">Suphakit P.</a> | 2022 </center>
