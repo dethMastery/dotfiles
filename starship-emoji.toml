@@ -1,13 +1,8 @@
 # Use custom format
 format = """
-[┌───────────────────>](bold green) 
-[│](bold green) $directory$package
-[│](bold green) $git_branch| $git_status 
-[└─>](bold green) """
-
-right_format = """
-[───>](bold green)$username$hostname
-"""
+[ @](bold green) $directory| $username on $hostname
+[](bold green) $package | $git_status$git_branch
+[ >>](bold green) """
 
 # Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 10
@@ -36,15 +31,19 @@ truncation_symbol = ''
 ahead = '☝️ ${count}'
 behind = '👇 ${count}'
 diverged = '👆 ${ahead_count} - 👇 ${behind_count}'
-up_to_date = '👍 Update'
+up_to_date = ' 👍 Update'
 untracked = '❓ Untracked'
 modified = '[⁉ Modified](red) '
 staged = '[++\($count\)](green)'
 
 [hostname]
-format = ' on [$ssh_symbol](bold blue)[$hostname](bold coral)'
+ssh_only = false
+format = '[$hostname](fg:#ff6f61)'
+disabled = false
 
 [username]
 style_user = 'white bold'
 style_root = 'black bold'
-format = ' [$user]($style)'
+format = '[$user]($style)'
+disabled = false
+show_always = true
