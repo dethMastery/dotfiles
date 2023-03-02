@@ -1,9 +1,8 @@
 # Use custom format
 format = """
-[┌───────────────────>](bold green) 
-[│](bold green) $directory$package
-[│](bold green) $git_branch| $git_status 
-[└─>](bold green) """
+[ @](bold green) $directory| $username on $hostname
+[](bold green) $package | $git_status$git_branch
+[ >>](bold green) """
 
 right_format = """
 [───>](bold green)$username$hostname
@@ -42,9 +41,13 @@ modified = '[!!! Modified](red) '
 staged = '[++\($count\)](green)'
 
 [hostname]
-format = ' on [$hostname](bold coral)'
+ssh_only = false
+format = '[$hostname](fg:#ff6f61)'
+disabled = false
 
 [username]
 style_user = 'white bold'
 style_root = 'black bold'
-format = ' [$user]($style)'
+format = '[$user]($style)'
+disabled = false
+show_always = true
