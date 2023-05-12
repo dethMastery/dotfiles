@@ -1,8 +1,10 @@
 # Use custom format
 format = """
-[ @](bold green) $directory| $username on $hostname
-[](bold green) $package | $git_status$git_branch
-[ >>](bold green) """
+╭─────╮  $username on $hostname [@ $directory](bold green)
+│ ◠ [◡](bold green) ◠ [](bold green) $package | $git_status$git_branch
+╰─────╯ [ :](bold green) """
+
+right_format = """│ ◠ ◡ ◠ │"""
 
 # Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 10
@@ -42,7 +44,7 @@ format = '[$hostname](fg:#ff6f61)'
 disabled = false
 
 [username]
-style_user = 'white bold'
+style_user = 'fg:#D0FEF5 bold'
 style_root = 'black bold'
 format = '[$user]($style)'
 disabled = false

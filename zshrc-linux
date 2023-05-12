@@ -33,3 +33,29 @@ alias cls="clear"
 alias dns-flush="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 ## Python 3 shortener
 alias python="python3"
+
+alias :ga="git add"
+alias :ga.="git add ."
+alias :gp="git push"
+alias :gs="git status"
+alias :gl="git log"
+
+alias :x="exit"
+alias :g-ig='bash -c "$(curl -fsSL https://raw.githubusercontent.com/katzEco/katzuScript/main/scripts/ignored.sh)"'
+alias :g-spon='bash -c "$(curl -fsSL https://raw.githubusercontent.com/katzEco/katzuScript/main/scripts/sponser.sh)"'
+
+alias :y="yarn"
+alias :p="pnpm"
+
+:gClone() {
+	git clone https://github.com/$1/$2
+}
+
+:gCom() {
+	if $1 = "init"
+	then
+		git commit -m "init: initial commit"
+	else 
+		git commit -m "$1"
+	fi
+}
